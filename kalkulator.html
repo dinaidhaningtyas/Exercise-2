@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+        <script language="JavaScript" text="text/JavaScript">
+        function tambah(){
+            var hasil = document.getElementById("calculate");
+            var a = parseInt(hasil.nilai1.value);
+            var b = parseInt(hasil.nilai2.value);
+            var total = a + b;
+            hasil.equals.value=total;
+        }
+        function kurang(){
+            var hasil = document.getElementById("calculate");
+            var a = parseInt(hasil.nilai1.value);
+            var b = parseInt(hasil.nilai2.value);
+            var total = a - b;
+            hasil.equals.value=total;
+        }
+        function kali(){
+            var hasil = document.getElementById("calculate");
+            var a = parseInt(hasil.nilai1.value);
+            var b = parseInt(hasil.nilai2.value);
+            var total = a * b;
+            hasil.equals.value=total;
+        }
+        function bagi(){
+            var hasil = document.getElementById("calculate");
+            var a = parseInt(hasil.nilai1.value);
+            var b = parseInt(hasil.nilai2.value);
+            var total = a / b;
+            hasil.equals.value=total;
+        }
+            </script>
+    <head>
+        <title>Calculator Sederhana</title>
+    </head>
+        <body>
+            <h1>Calculator Sederhana</h1>
+           <link rel="stylesheet" type="text/css" href="style.css"/>
+            <form id="calculate">
+                <input type="text" name="nilai1"><br>
+                <input type="text" name="nilai2"><br>
+                <input type="text" name="equals" readonly>
+                </form>
+            <button class="button button1" onclick="tambah()">+
+                </button>
+                <button class="button button1" onclick="kurang()">-
+                    </button>
+                    <button class="button button1" onclick="kali()">*
+                        </button>
+                        <button class="button button1" onclick="bagi()">/
+                            </button>
+        </body>
+</html>
+
